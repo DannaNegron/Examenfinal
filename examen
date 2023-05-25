@@ -1,0 +1,153 @@
+/*
+Clase
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package author64472;
+import java.util.ArrayList;
+import models.Atributos;
+import java.util.Scanner;
+/**
+ *
+ * @author danna
+ */
+public class Author64472 {
+    static ArrayList<Atributos>autor64472=new ArrayList<>();
+    static Scanner entradaDato =  new Scanner(System.in);
+    
+    public static void datos(){
+     System.out.println("Negron Salazar Danna Guiselle");
+     System.out.println("64472");
+     System.out.println("al064472@uacam.mx");
+}
+    public static void sumaCigarros(){
+        int Cantidad = 72;
+        int Tiempo = 9;
+        int Aroma = 6;
+        int Azucar = 44;
+        int Nicotina = 2;
+        int resultado = 72+9+6+44+2;
+        System.out.println("El resultado obtenido de la suma es: "+ resultado);
+                
+    }
+    public static void picadoDesvenado(){
+        System.out.println("Arrancando la maquina");
+        int interaccion = 0;
+        int Tiempo =  9;
+        for (int i = 0; i < Tiempo; i++){
+            System.out.println("Picado y desvenado" + i);
+          
+        }
+        
+    }
+       
+        
+
+
+
+    public static void main(String[] args) {
+        datos();
+        sumaCigarros();
+        picadoDesvenado();
+
+    }
+    
+}
+Models Atributos
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package models;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author danna 
+ * al064472@uacam.mx
+ * al 06 44 72 @uacam.mx
+ * 72 cantidad de hojas
+ * 7+2= 9 tiempo de picado
+ * 06 aroma
+ * 44 azucar 
+ * 0+2= 2 nicotina
+ * 133 suma
+ * 
+ */
+public class Atributos {
+    static ArrayList<Atributos>autor64472=new ArrayList<>();
+    
+    private ind Id;
+    private String Cantidad;
+    private String Tiempo;
+    private String Aroma;
+    private String Azucar;
+    private String Nicotina;
+
+    public Atributos() {
+    }
+
+    public static void setAutor64472(ArrayList<Atributos> autor64472) {
+        Atributos.autor64472 = autor64472;
+    }
+
+    public void setId(ind Id) {
+        this.Id = Id;
+    }
+
+    public void setCantidad(String Cantidad) {
+        this.Cantidad = Cantidad;
+    }
+
+    public void setTiempo(String Tiempo) {
+        this.Tiempo = Tiempo;
+    }
+
+    public void setAroma(String Aroma) {
+        this.Aroma = Aroma;
+    }
+
+    public void setAzucar(String Azucar) {
+        this.Azucar = Azucar;
+    }
+
+    public void setNicotina(String Nicotina) {
+        this.Nicotina = Nicotina;
+    }
+
+    public static ArrayList<Atributos> getAutor64472() {
+        return autor64472;
+    }
+
+    public ind getId() {
+        return Id;
+    }
+
+    public String getCantidad() {
+        return Cantidad;
+    }
+
+    public String getTiempo() {
+        return Tiempo;
+    }
+
+    public String getAroma() {
+        return Aroma;
+    }
+
+    public String getAzucar() {
+        return Azucar;
+    }
+
+    public String getNicotina() {
+        return Nicotina;
+    }
+
+    @Override
+    public String toString() {
+        return "Atributos{" + "Id=" + Id + ", Cantidad=" + Cantidad + ", Tiempo=" + Tiempo + ", Aroma=" + Aroma + ", Azucar=" + Azucar + ", Nicotina=" + Nicotina + '}';
+    } 
+    
+     
+    
+}
